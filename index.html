@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Adjusting Entries</title>
   <meta name="description" content="Notes on accounting, tax, and the numbers behind the business." />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
   <style>
     :root {
       --bg: #0d1320;
@@ -125,7 +129,7 @@
 <body>
   <main class="card">
     <div class="eyebrow">Coming soon</div>
-    <h1>The Adjusting Entries</h1>
+    <h1 id="ae-title" style="user-select:none">The Adjusting Entries</h1>
     <div class="rule"></div>
     <p class="tagline">Notes on accounting, tax, and the numbers behind the business.</p>
 
@@ -137,5 +141,20 @@
 
     <footer>&copy; 2026 The Adjusting Entries</footer>
   </main>
+
+  <script>
+    /* Secret entrance: click the title 5 times to open the full site. */
+    (function () {
+      var t = document.getElementById('ae-title');
+      if (!t) return;
+      var clicks = 0, timer = null;
+      t.addEventListener('click', function () {
+        clicks++;
+        clearTimeout(timer);
+        timer = setTimeout(function () { clicks = 0; }, 1500);
+        if (clicks >= 5) { clicks = 0; window.location.href = '/site/'; }
+      });
+    })();
+  </script>
 </body>
 </html>
