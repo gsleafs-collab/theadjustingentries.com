@@ -239,7 +239,13 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy);line-height:1.18;font
   .cta-band{padding:38px 24px}
   .footer-top{grid-template-columns:1fr}
 }
+@media (max-width:600px){
+  .container{padding-left:30px;padding-right:30px}
+}
 @media (max-width:520px){
   .grid{grid-template-columns:1fr}
+}
+@media (max-width:380px){
+  .container{padding-left:24px;padding-right:24px}
 }
 .mobile-menu{display:none}
