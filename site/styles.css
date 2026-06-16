@@ -97,21 +97,25 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy);line-height:1.18;font
   display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--white);
   border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)
 }
-.featured .ft-visual{position:relative;min-height:340px;background:linear-gradient(135deg,var(--navy) 0%,#173a5e 55%,var(--blue) 140%);overflow:hidden}
+.featured .ft-visual{position:relative;min-height:340px;overflow:hidden}
 .featured .ft-body{padding:42px 44px;display:flex;flex-direction:column;justify-content:center}
 .featured h2{font-size:clamp(24px,3vw,34px);margin:14px 0 14px}
 .featured p{color:var(--muted);font-size:16.5px;margin-bottom:22px}
 
-/* visual motif inside thumbnails */
-.motif{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:26px;color:rgba(255,255,255,.92)}
-.motif .mk{font-family:var(--font-head);font-weight:700;font-size:42px;letter-spacing:.04em;opacity:.9}
-.motif .mrows{display:flex;flex-direction:column;gap:7px;max-width:70%}
-.motif .mrows span{height:9px;background:rgba(255,255,255,.16);border-radius:5px}
-.motif .mrows span:nth-child(2){width:80%}
-.motif .mrows span:nth-child(3){width:55%}
-.motif .doubleline{height:0;position:relative;margin-top:6px}
-.motif .doubleline::before,.motif .doubleline::after{content:"";position:absolute;left:0;width:120px;height:3px;background:#5b8bff;border-radius:3px}
-.motif .doubleline::before{top:0}.motif .doubleline::after{top:7px}
+/* themed thumbnail graphics — distinct gradient + pattern + topic icon */
+.thumb,.ft-visual,.article-hero{display:flex;align-items:center;justify-content:center}
+.t-tax{background:linear-gradient(135deg,#2B2926 0%,#16314f 55%,#2E6BF6 135%)}
+.t-assurance{background:linear-gradient(140deg,#0B1F33 0%,#33598a 100%)}
+.t-tech{background:linear-gradient(140deg,#2E6BF6 0%,#16277d 100%)}
+.t-tax::before,.t-assurance::before,.t-tech::before{content:"";position:absolute;inset:0;pointer-events:none}
+.t-tax::before{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.07) 0 2px,transparent 2px 17px)}
+.t-assurance::before{background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:24px 24px}
+.t-tech::before{background-image:radial-gradient(rgba(255,255,255,.18) 1.6px,transparent 1.7px);background-size:18px 18px}
+.t-tax::after,.t-assurance::after,.t-tech::after{content:"";position:absolute;left:24px;bottom:22px;width:48px;height:3px;background:rgba(255,255,255,.85);border-radius:3px;box-shadow:0 7px 0 0 rgba(255,255,255,.85);pointer-events:none}
+.ti{position:relative;z-index:1;color:#fff;opacity:.95}
+.thumb .ti{width:74px;height:74px}
+.ft-visual .ti{width:118px;height:118px}
+.article-hero .ti{width:104px;height:104px}
 
 /* ============================ CATEGORY CHIPS ============================ */
 .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
@@ -125,12 +129,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy);line-height:1.18;font
 .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
   box-shadow:var(--shadow);transition:.2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--line-strong)}
-.card .thumb{position:relative;height:172px;background:linear-gradient(135deg,var(--navy),#1c4a78)}
-.card .thumb.cat-tax{background:linear-gradient(135deg,#102A43,#2E6BF6)}
-.card .thumb.cat-assurance{background:linear-gradient(135deg,#0B1F33,#2C5A8C)}
-.card .thumb.cat-tech{background:linear-gradient(135deg,#173a5e,#2E6BF6)}
-.card .thumb.cat-small-business{background:linear-gradient(135deg,#102A43,#3D7BD6)}
-.card .thumb.cat-personal-finance{background:linear-gradient(135deg,#14304d,#4a6fa5)}
+.card .thumb{position:relative;height:172px;overflow:hidden}
 .card .card-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
 .cat-label{font-family:var(--font-head);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:9px}
 .card h3{font-size:19.5px;margin-bottom:10px;font-weight:600}
@@ -165,7 +164,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--navy);line-height:1.18;font
 /* ============================ ARTICLE (reading) ============================ */
 .article-head{text-align:center;padding:54px 0 10px;max-width:760px;margin:0 auto}
 .article-head h1{font-size:clamp(30px,4.4vw,46px);margin:14px 0 18px;font-weight:700}
-.article-hero{height:300px;border-radius:var(--radius);background:linear-gradient(135deg,var(--navy),#1c4a78);margin:26px 0 40px;position:relative;overflow:hidden}
+.article-hero{height:300px;border-radius:var(--radius);margin:26px 0 40px;position:relative;overflow:hidden}
 .prose{max-width:720px;margin:0 auto;font-size:17.5px}
 .prose p{margin:0 0 22px}
 .prose h2{font-size:26px;margin:38px 0 14px}
