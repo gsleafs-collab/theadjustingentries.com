@@ -62,6 +62,9 @@
         activeCat = cat0;
       }
     }
+
+    <script data-goatcounter="https://theadjustingentries.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
     if (window.location.hash === '#search' && search) { search.focus(); }
     apply();
   }
