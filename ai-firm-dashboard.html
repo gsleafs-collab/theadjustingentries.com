@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI just came for your firm dashboard, not just your files — The Adjusting Entries</title>
+<meta name="description" content="Firm360 and Abacor shipped Claude connectors for practice data. What launched, the read-only line that matters, and what Canadian firms should ask first." />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo-horizontal.svg" alt="The Adjusting Entries"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="articles.html" class="active">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="icon-btn" href="articles.html#search" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </a>
+      <a class="btn btn-primary" href="articles.html">All articles</a>
+      <button class="nav-toggle icon-btn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="articles.html">Articles</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<article>
+  <div class="container article-head">
+    <div class="cat-label">Tech &amp; Tools</div>
+    <h1>AI just came for your firm dashboard, not just your files</h1>
+    <div class="byline">
+      <span class="av">GM</span>
+      <span>Gurjot Mann, CPA &nbsp;&middot;&nbsp; Jul 19, 2026 &nbsp;&middot;&nbsp; 8 min read</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="article-hero t-tech">
+      <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 13.5v-3M12 13.5V7.5M17 13.5v-4.5"/><path d="M9 21h6M12 17v4"/></svg>
+    </div>
+  </div>
+
+  <div class="container prose">
+    <p>It's 4:30 on a Thursday. A partner stops at your desk and asks how much unbilled WIP is sitting on the Henderson group. You know a number exists. It lives in a dashboard, behind three filters, in a report somebody maybe refreshes monthly. So, you say the honest thing. "I'll get back to you."</p>
+    <p>Two product launches in early June went straight at that moment. Firm360 and Abacor each shipped Claude connectors that answer plain-language questions about firm data. Not client files. Firm data. WIP, realization, overdue invoices, meeting commitments, open action items.</p>
+    <p>Most AI coverage in this profession is about doing the work. This is about running the firm. And here's the thing. The line between those two ideas blurred within a single news week.</p>
+    <p>In this post, you'll learn what launched, why the read-only detail matters more than the demo, and what Canadian firms should ask before anyone connects an AI to practice data.</p>
+
+    <h2>What actually launched in early June</h2>
+    <p>Two connectors, two days apart. Same idea, different data.</p>
+
+    <h3>Firm360 turned firm health into a conversation</h3>
+    <p>On June 2, Firm360 launched its Claude Connector. Firm360 is a US practice management platform built by accountants. The connector lets partners and practice leads ask questions in plain English and get answers pulled from live Firm360 data.</p>
+    <p>It handles the numbers partners actually run the firm on:</p>
+    <ul>
+      <li><strong>Work-in-progress.</strong> A partner can ask "What's our current WIP across open engagements?" and get the figure in seconds.</li>
+      <li><strong>Realization, write-ups, and write-downs.</strong> How billed amounts compare against time on the clock.</li>
+      <li><strong>Overdue invoices and AR.</strong> Which clients are sitting past 60 days.</li>
+      <li><strong>Client-level profitability.</strong> Which relationships quietly lose the firm money.</li>
+    </ul>
+    <p>Four details matter more than the demo:</p>
+    <ul>
+      <li><strong>It's read-only.</strong> Firm360's own announcement is blunt about it. Claude can answer questions about the firm. It can't change anything in the platform.</li>
+      <li><strong>It's a limited beta.</strong> You need an active Firm360 subscription plus a Claude Pro or Team plan.</li>
+      <li><strong>The data stays put.</strong> Firm360 states firm data stays inside its platform and isn't used to train the underlying model.</li>
+      <li><strong>Setup takes minutes.</strong> Nothing to migrate and nothing for IT to build. Remember that last one. It cuts both ways.</li>
+    </ul>
+    <p>Firm360 also frames this as a starting point, not a finished product. Its launch post describes a deliberately narrow scope, a beta cohort shaping the roadmap, and a public date for general availability still to come. Read that as honest. Then read it as a reminder that early numbers deserve early skepticism.</p>
+
+    <h3>Abacor made meeting history conversational</h3>
+    <p>Abacor is a New York-based AI assistant for accounting firms that records and structures client meetings. It announced its own Claude connector in a June 1 blog post, and the trade press picked it up on June 4.</p>
+    <p>Once connected, Claude can pull from everything Abacor has captured:</p>
+    <ul>
+      <li><strong>Past meetings.</strong> Summaries, action items, transcripts, decisions made, and risks raised.</li>
+      <li><strong>Commitments.</strong> Search an entire meeting history for the promise you half remember making.</li>
+      <li><strong>Meeting prep.</strong> Which upcoming meetings have briefs ready and which don't.</li>
+      <li><strong>Open items.</strong> What's due this week across every engagement, and who owns it.</li>
+    </ul>
+    <p>Unlike Firm360's beta, Abacor's connector is available now to its existing customers worldwide. Permissions follow your role in Abacor, so Claude only sees what you're already allowed to see. It also works alongside other connectors like Gmail, QuickBooks, Xero, and Microsoft 365 in the same conversation.</p>
+    <p>These aren't the same product. One is the firm's financial vitals. The other is its working memory. Put them side by side and a pattern shows up.</p>
+
+    <h2>The quiet shift: AI that answers about the work</h2>
+    <p>For the last couple of years, accounting AI news has been about production. Drafting memos. Tying out statements. Agentic tools that prepare sections of an audit file, like the <a href="agentic-audit.html">CaseWare and MNP partnership we've covered here before</a>.</p>
+    <p>These connectors do something different. They don't prepare anything. They answer questions about capacity, billing health, and open commitments. The work about the work.</p>
+    <p>Both run on the same plumbing. The Model Context Protocol, or MCP, is an open standard Anthropic released in late 2024 and has since donated to the Linux Foundation. Think of it as a standard plug between a chat window and a software database. Once a vendor builds a connector, the AI can query live data. No exports, and no pasting from a stale PDF report. Accounting tools have been adopting it all year, with QuickBooks, Xero, and Microsoft 365 connectors already in use.</p>
+    <p>For a senior or a manager, the appeal is obvious. The questions that interrupt review time are rarely deep ones. Where does the file stand. What did we promise this client in March. Who hasn't been billed. Today each of those costs a dashboard safari or an email to whoever owns the report.</p>
+    <p>Picture a Monday in busy season. Before your first file, you ask which engagements moved over the weekend, which clients still owe documents, and where your team's hours went last week. Three answers, one chat window, no tabs. That's the pitch. And for once, the pitch describes something a working senior would actually use.</p>
+    <p>But be honest about the limits:</p>
+    <ul>
+      <li><strong>The answer is only as good as the data.</strong> If time entries post late, the WIP figure is wrong. Now it's wrong faster and with more confidence.</li>
+      <li><strong>AI can misread clean data too.</strong> A fluent answer isn't a verified one. Anything you'll repeat to a partner or a client needs a second look at the source.</li>
+      <li><strong>Beta means beta.</strong> Firm360 itself describes the launch scope as deliberately narrow, with general availability still ahead.</li>
+    </ul>
+    <blockquote>Treat these tools like a keen junior. Fast and genuinely useful, and nothing goes out under your name without review.</blockquote>
+
+    <h2>Where insight ends and action begins</h2>
+    <p>Here's the part that should get your attention as a practitioner.</p>
+    <p>Firm360 drew a hard line. Read-only. Claude can tell you the number, and it cannot touch the number.</p>
+    <p>Abacor's launch materials step past that line. Among its suggested prompts is one that asks Claude to update journal entries directly in the general ledger based on changes discussed in a client meeting, then produce refreshed financial statements.</p>
+    <p>That isn't insight. That's action. And it showed up in the same news week as a vendor selling restraint.</p>
+    <p>CPA Ontario has described this divide in its writing on agentic AI. A generative tool lists your flight options. An agentic tool books the flight. When AI moves from reporting a number to changing a record, the questions change completely:</p>
+    <ul>
+      <li>Who approved the entry?</li>
+      <li>Where does the change sit in the audit trail?</li>
+      <li>Would the file survive a practice inspection if a chat prompt posted the adjustment?</li>
+    </ul>
+    <p>So here's a practical stance. Insight tools are a reporting question. Action tools are a controls question. They deserve different checklists, even when they arrive in the same product.</p>
+    <p>There's an assurance angle too. If your firm performs audits or reviews, CSQM 1 already expects you to manage technological resources as part of your system of quality management. A connector that touches client information, or one that can write to a ledger, belongs in that conversation. Not in a partner's personal experiments.</p>
+
+    <h2>What this means for Canadian firms</h2>
+    <p>Neither tool may be yours. Firm360 describes itself as serving firms across the United States. Abacor is available worldwide, but it's a meeting tool, not your practice management system.</p>
+    <p>The pattern still matters here, for two reasons.</p>
+    <p>First, your stack is next. If your firm runs on CaseWare Cloud, iFirm, or a similar Canadian setup, the question isn't whether this kind of connector reaches your tools. It's when, and whether your firm settles its policy before or after someone plugs one in. Worth raising at your next vendor renewal call.</p>
+    <p>Second, confidentiality doesn't wait for the tools to mature. Practice management data is soaked in client information. Names, fee arrangements, billing disputes, engagement status. Under the CPA codes of professional conduct, you're required to protect confidential information obtained through professional relationships, and passing it to a third party carries responsibilities. PIPEDA sits behind that for personal information. CPA Ontario has also published pointed questions for members on AI, including how firms ensure third-party generative AI products meet legal, regulatory, and governance requirements.</p>
+    <p>Now remember the setup detail from earlier. Configuration takes minutes and needs nothing from IT. That's the sales pitch, and it's also the exposure. A partner with a personal Claude login could wire firm data into a chat on a Tuesday afternoon with nobody else in the loop. Write the policy before that Tuesday.</p>
+    <p>The policy doesn't need to be long. One page covering who may connect AI tools to firm or client data, which tools are approved, what data is off limits, and where questions go. That single page turns a Tuesday afternoon surprise into a request someone can actually evaluate.</p>
+
+    <h2>Six questions to ask before you connect anything</h2>
+    <p>Bring this list to the next vendor demo, or to the enthusiastic partner who found the setup page:</p>
+    <ul>
+      <li><strong>Is it read-only?</strong> If write access exists, can you disable it at the permission level? Is every write logged?</li>
+      <li><strong>Whose account and whose plan?</strong> A firm-managed Team plan with admin visibility is a different risk than a partner's personal subscription.</li>
+      <li><strong>What does the AI provider do with the data?</strong> Get training and retention commitments in writing, not from a sales call.</li>
+      <li><strong>Do permissions mirror the source system?</strong> Abacor's role-following approach is the right pattern to demand. The AI should never see more than the user can.</li>
+      <li><strong>What client information ends up in chat history?</strong> Names, fees, and disputes appearing in AI conversations are disclosures. Treat them that way.</li>
+      <li><strong>Who verifies before it gets repeated?</strong> A number quoted to a client or a bank is your number. Not the AI's.</li>
+    </ul>
+    <p>None of this says don't connect. It says connect the way you'd let a new hire near client data. Scoped, supervised, and documented.</p>
+
+    <div class="divider"><span class="rule2"></span></div>
+
+    <h2>The bottom line</h2>
+    <ul>
+      <li>Firm360 launched a Claude connector on June 2 covering WIP, realization, write-downs, overdue invoices, and client profitability. Limited beta, read-only by design, on a US-focused platform.</li>
+      <li>Abacor announced its connector June 1, with coverage on June 4. It makes meeting history, commitments, and action items conversational, and it's live for existing customers now.</li>
+      <li>The shift is real. After years of AI that does the work, these tools answer questions about the work.</li>
+      <li>Watch the line between insight and action. Read-only access is a reporting question. Write access is a controls question. One vendor drew the line and the other's marketing crossed it in the same week.</li>
+      <li>Canadian firms should move first on policy, not tools. Confidentiality obligations apply the moment practice data flows through an AI. Decide who may connect what before a setup wizard decides for you.</li>
+    </ul>
+    <p>Your practice management vendor will pitch you something like this within the year. Now you know what to ask when they do.</p>
+    <p>New posts land every week at The Adjusting Entries. If this one gave you better questions for the next technology conversation at your firm, come back next week. There's always another entry to adjust.</p>
+
+    <p style="margin-top:30px"><a class="btn btn-ghost" href="articles.html">&larr; Back to all articles</a></p>
+  </div>
+</article>
+
+<footer class="site-footer" style="margin-top:50px">
+  <div class="container footer-top">
+    <div>
+      <img class="flogo" src="assets/logo-horizontal-reversed.svg" alt="The Adjusting Entries">
+      <p class="fabout">Clear, practical writing on accounting, tax, and the numbers behind your business, by Gurjot Mann, CPA.</p>
+    </div>
+    <div class="fcol">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol">
+      <h4>Topics</h4>
+      <a href="articles.html?cat=tax">Tax</a>
+      <a href="articles.html?cat=assurance">Assurance</a>
+      <a href="articles.html?cat=tech">Tech &amp; Tools</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span data-year></span> The Adjusting Entries</span>
+    <span>Ontario, Canada</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://theadjustingentries.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
