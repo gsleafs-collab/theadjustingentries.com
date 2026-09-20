@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CRA AI audits: what triggers a flag and what to do — The Adjusting Entries</title>
+<meta name="description" content="The CRA runs 19 AI systems and scores returns before a human opens the file. Which systems feed audit selection, what the models match against, and what to do in the first week after a letter." />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo-horizontal.svg" alt="The Adjusting Entries"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="articles.html" class="active">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="icon-btn" href="articles.html#search" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </a>
+      <a class="btn btn-primary" href="articles.html">All articles</a>
+      <button class="nav-toggle icon-btn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a><a href="articles.html">Articles</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<article>
+  <div class="container article-head">
+    <div class="cat-label">Tech &amp; Tools</div>
+    <h1>CRA AI audits: what triggers a flag and what to do</h1>
+    <div class="byline">
+      <span class="av">GM</span>
+      <span>Gurjot Mann, CPA &nbsp;&middot;&nbsp; Sep 20, 2026 &nbsp;&middot;&nbsp; 10 min read</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="article-hero t-tech">
+      <svg class="ti" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.6"/><path d="M12 1.6v4M12 18.4v4M1.6 12h4M18.4 12h4"/></svg>
+    </div>
+  </div>
+
+  <div class="container prose">
+    <p>A client forwards you a CRA letter about their 2024 rental income and asks the obvious question. Why them?</p>
+    <p>Here's the uncomfortable answer. Nobody at the CRA picked them. A model did.</p>
+    <p>The CRA now runs 19 artificial intelligence systems. Some are ordinary back-office tools. Others score returns for risk of non-compliance before any human opens the file. The agency describes this very carefully, and the wording matters more than most people notice.</p>
+    <p>Most coverage of this stops at the news release. This post goes to what the CRA published about itself, including the privacy documents that name its risk-scoring systems and the internal evaluation that shows how often the targeting misses.</p>
+    <p>You'll learn which systems feed audit selection, what data they match against, what "human oversight" really covers, whether a client can challenge an algorithmic flag, and what to do in the first week after a letter lands.</p>
+
+    <h2>The CRA runs 19 AI systems, and it words this carefully</h2>
+    <p>A CRA spokesperson confirmed the number publicly in April 2026. The same statement included this line: "All tax returns and individual tax files continue to be reviewed and processed with human oversight. AI is not used to make decisions on personal tax situations."</p>
+
+    <h3>Read the statement twice</h3>
+    <p>Both sentences are true. Both are also narrower than they sound.</p>
+    <p>A "decision on a personal tax situation" means an assessment, a reassessment, or a benefit eligibility determination. Selection sits upstream of all of those. A model can rank your client in the top percentile for non-compliance risk, route the file to a program area, and never make a single decision as the CRA defines the word.</p>
+    <p>The uses the CRA describes in public are modest. A chatbot. Document classification and sorting. Internal drafting and summarizing. Coding assistants. Corporate functions. Nothing in that list is audit selection, and nothing in that list rules it out either.</p>
+
+    <h3>Charlie, and why the accuracy gap matters</h3>
+    <p>The CRA's chatbot is worth a short detour, because it's the only CRA AI system that has been independently tested.</p>
+    <ul>
+      <li>Launched February 2020 as a scripted, rule-based tool</li>
+      <li>About $18 million to build and operate over five years</li>
+      <li>Upgraded to a generative AI version in November 2025</li>
+      <li>CRA cited roughly 90% accuracy in pre-release testing of the new version</li>
+      <li>The Auditor General tested the older version in October 2025 and found it gave correct information about one third of the time</li>
+    </ul>
+    <p>That's a wide gap between an internal benchmark and an outside test. Keep it in mind the next time you hear a confidence number attached to an enforcement-side model. Nobody has independently tested those.</p>
+
+    <h2>The systems that actually touch audit selection</h2>
+    <p>This is the part missing from the news coverage. The CRA documents its risk-scoring systems itself, in privacy impact assessment summaries published on canada.ca.</p>
+
+    <h3>What the CRA's own privacy documents name</h3>
+    <p><strong>Business Intelligence and Compliance Risk Assessment.</strong> The CRA describes it as using "analytical algorithms and statistical models that generate risk scores that predict the risk of non-compliance." The summary is explicit that at the outset, "all available taxpayer personal information" is run through the predictive models. Cases that come out the other side go to the Compliance Programs Branch for further screening, which can lead to an audit, a letter, monitoring, penalties, or leads on related taxpayers.</p>
+    <p>It covers four audit classes:</p>
+    <ul>
+      <li>International and Large Business</li>
+      <li>Small and Medium Enterprises</li>
+      <li>Scientific Research and Experimental Development</li>
+      <li>GST/HST</li>
+    </ul>
+    <p><strong>Integrated Risk Assessment System.</strong> In use for large business since fiscal 2017-2018. It produces algorithm-based risk rankings across three disciplines, domestic, international, and tax avoidance. Human reviewers then layer in local knowledge and audit history, and the highest-ranked files become the audit workplan.</p>
+    <p><strong>Enterprise Fraud Management System.</strong> Significant enough to have drawn its own CRA internal audit.</p>
+    <blockquote>Every return passes through a scoring layer. The score doesn't assess anyone. It decides whose file a human being will look at, and that is most of what matters.</blockquote>
+
+    <h3>The CRA's own evaluation is not flattering</h3>
+    <p>On January 23, 2026, the CRA released an evaluation of workload management in its International and Large Business Tax Programs, covering April 2017 through March 2024.</p>
+    <p>For each entity selected, the CRA opens three audit cases, one per discipline. The evaluation tracked how often those cases produced tax earned by audit:</p>
+    <ul>
+      <li>All three cases produced results <strong>3%</strong> of the time</li>
+      <li>Two of three produced results <strong>22%</strong> of the time</li>
+      <li>Only one of three produced results <strong>76%</strong> of the time</li>
+    </ul>
+    <p>Efficiency moved the wrong way too. Average hours per closed case rose 26%, from 127 to 160, between fiscal 2021-2022 and 2023-2024. One of the recommendations was to review and refine file selection.</p>
+    <p>Tell your clients this part. Risk scoring is a filter, not a verdict. The CRA's own numbers show that most selected large-business cases produce nothing. A flag means someone is looking. It is not evidence that something is wrong.</p>
+
+    <h2>What the models are matching against</h2>
+
+    <h3>Data the CRA already has before you file</h3>
+    <p>The models aren't guessing. They're comparing what's reported against data already sitting in CRA systems.</p>
+    <ul>
+      <li><strong>Slips.</strong> T4s, T5s, T3s, and financial institution reporting</li>
+      <li><strong>Payment processors.</strong> Merchant settlement data</li>
+      <li><strong>Digital platforms.</strong> Part XX reporting rules require platform operators to file annually by January 31. The first return was due January 31, 2025 for the 2024 calendar year. That covers short-term rentals, ride-share, and online selling</li>
+      <li><strong>Crypto.</strong> Canada's Crypto-Asset Reporting Framework takes effect January 1, 2026, with first reporting in 2027 for the 2026 calendar year. Your client's exchange activity for the year now in progress is the first batch</li>
+      <li><strong>Offshore structures.</strong> Information exchange under the Common Reporting Standard</li>
+      <li><strong>Industry norm databases.</strong> This is the one people forget</li>
+    </ul>
+
+    <h3>The ratios that stand out</h3>
+    <p>Peer comparison is where most owner-managed files get caught. Things that draw attention:</p>
+    <ul>
+      <li>Gross margin drifting off the industry band with nothing in the file explaining it</li>
+      <li>Shareholder loan balances that only move one way, especially across a year end</li>
+      <li>Vehicle, meals, and travel claims high relative to revenue for the industry code</li>
+      <li>Large year-over-year swings in revenue, deductions, or margin</li>
+      <li>ITCs claimed that don't tie to reported sales on the same period's filings</li>
+      <li>Contractor classification where the facts point to employment</li>
+      <li>Personal expenses run through the corporation, renovations and travel in particular</li>
+    </ul>
+    <p>None of these are illegal. All of them are visible to a model that compares your client against everyone else filing under the same code.</p>
+
+    <h2>Human oversight, and the deadline that passed in June</h2>
+
+    <h3>What the Directive requires</h3>
+    <p>The federal Directive on Automated Decision-Making is the Treasury Board instrument governing this. It has been in effect since April 1, 2019 and applies to automated systems developed or procured after April 1, 2020. Systems that <em>assist</em> an administrative decision are in scope, not just systems that make one.</p>
+    <p>It requires an Algorithmic Impact Assessment published before launch, peer review findings published, bias testing, data governance, an explanation to affected people, human intervention scaled to the impact level, and recourse.</p>
+    <p>Here's the part that went by without much notice. The fourth update to the Directive took effect June 24, 2025. Federal institutions running automated decision systems that were already in production got until June 24, 2026 to meet the updated requirements.</p>
+    <p>That date has passed. It passed three months ago, quietly, with no public accounting of which systems met it.</p>
+
+    <h3>Where you can actually look</h3>
+    <p>The Government of Canada publishes an AI Register on the open government portal. It pulls from Algorithmic Impact Assessments, access to information responses, parliamentary returns, and service inventories. It's labelled a minimum viable product and the entries are uneven.</p>
+    <p>Be honest with clients about what it gives you. It will confirm that a system exists and roughly what it does. It will not tell you why one particular client got picked. Nothing public will, and there's no sign that's changing.</p>
+
+    <h2>Can a client challenge an AI-driven selection?</h2>
+    <p>Short version. Not directly, and not in a way that helps.</p>
+    <ul>
+      <li><strong>No disclosure requirement.</strong> There's no formal obligation on the CRA to tell a taxpayer that an algorithm flagged the file</li>
+      <li><strong>Objections target the assessment, not the selection.</strong> A valid assessment doesn't become invalid because of how the file was chosen. Arguing about selection at the objection stage spends goodwill and gets nowhere</li>
+      <li><strong>Judicial review needs a decision.</strong> Audit selection doesn't change anyone's liability, which makes it weak ground for an application</li>
+      <li><strong>The Directive is policy, not a remedy.</strong> A department falling short creates an administrative problem for that department. It doesn't hand your client a tax outcome</li>
+    </ul>
+    <p>Tax lawyers are actively asking whether a Directive breach could support a procedural fairness argument down the road. It's a live question and worth watching. Don't build a client strategy on it yet.</p>
+    <p>What your client does have is the Taxpayer Bill of Rights, the CRA service complaint process, the Taxpayers' Ombudsperson, and the ordinary audit and objection rights. Those are real. They're also process tools, and none of them undo a selection.</p>
+
+    <h2>What to do when a client gets flagged</h2>
+
+    <h3>Before any letter arrives</h3>
+    <ul>
+      <li><strong>Reconcile to every slip and every third-party report.</strong> Mismatches are the cheapest thing a model can find and the easiest thing to prevent</li>
+      <li><strong>Document outliers in the year they happen.</strong> If margin dropped because a major contract went bad, put it in the file now. A note written at the time carries weight. One reconstructed two years later doesn't</li>
+      <li><strong>Tie GST/HST filings to the financial statements</strong> before you file, not after the query</li>
+      <li><strong>Settle worker classification</strong> before the CRA raises it</li>
+      <li><strong>Report crypto and platform income.</strong> The reporting is already built. 2026 is the first CARF year and there's no version of this where the data doesn't arrive</li>
+    </ul>
+
+    <h3>The first week after the letter</h3>
+    <ul>
+      <li><strong>Answer what was asked.</strong> Scope expansion usually starts with an over-broad first response</li>
+      <li><strong>Build a response calendar immediately.</strong> Bill C-31 was tabled May 6, 2026, passed second reading June 3, 2026, and is in committee. It has not received royal assent. If it passes as drafted, a notice of non-compliance carries $50 per day to a maximum of $25,000, and a compliance order penalty of 10% of aggregate tax payable where tax owing in at least one year exceeds $50,000. Slow responses are on track to get expensive</li>
+      <li><strong>Keep one channel.</strong> Client documents going straight to the auditor is how a narrow query turns into a broad audit</li>
+      <li><strong>Bring in counsel early</strong> where there's real exposure, particularly offshore holdings, unreported income, or gross negligence risk</li>
+    </ul>
+
+    <h3>If there is a real problem underneath</h3>
+    <p>The <a href="voluntary-disclosures.html">Voluntary Disclosures Program</a> was revised effective October 1, 2025, with a two-track relief structure and voluntariness assessed issue by issue. Once the CRA has contacted the client about that issue, the door is mostly shut.</p>
+    <p>That means the VDP conversation belongs before the letter arrives, not after. If you're reconciling a file and something doesn't add up, that's the moment to raise it.</p>
+
+    <div class="divider"><span class="rule2"></span></div>
+
+    <h2>The bottom line</h2>
+    <ul>
+      <li>The CRA runs 19 AI systems. Its statement that AI doesn't make decisions on personal tax situations is accurate and narrow, because selection happens before a decision</li>
+      <li>Risk scoring for audit selection is documented in the CRA's own privacy impact assessments, with named systems covering SME, large business, SR&amp;ED, and GST/HST</li>
+      <li>The CRA's January 2026 evaluation found that for large-business files, only one of three opened cases produced tax earned by audit 76% of the time. A flag is not a finding</li>
+      <li>The federal Directive deadline for systems already in production was June 24, 2026, and it passed without public accounting</li>
+      <li>There's no practical way to challenge an algorithmic selection. The defence is clean reconciliation and contemporaneous documentation</li>
+      <li>Bill C-31 hasn't passed. Watch it, because it changes what a slow response costs</li>
+    </ul>
+    <p>The uncomfortable truth is that your client's file was scored before anyone read it, and you'll never see the score. What you can control is whether the file holds up when a human finally opens it.</p>
+    <p>That's the work. Reconcile to the third-party data, write down why the unusual numbers are unusual, and answer queries narrowly and on time.</p>
+    <p>We cover this kind of thing every week. New posts on Canadian assurance, tax, and practice go up at theadjustingentries.com. Come back next week.</p>
+
+    <p style="margin-top:30px"><a class="btn btn-ghost" href="articles.html">&larr; Back to all articles</a></p>
+  </div>
+</article>
+
+<footer class="site-footer" style="margin-top:50px">
+  <div class="container footer-top">
+    <div>
+      <img class="flogo" src="assets/logo-horizontal-reversed.svg" alt="The Adjusting Entries">
+      <p class="fabout">Clear, practical writing on accounting, tax, and the numbers behind your business, by Gurjot Mann, CPA.</p>
+    </div>
+    <div class="fcol">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol">
+      <h4>Topics</h4>
+      <a href="articles.html?cat=tax">Tax</a>
+      <a href="articles.html?cat=assurance">Assurance</a>
+      <a href="articles.html?cat=tech">Tech &amp; Tools</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span data-year></span> The Adjusting Entries</span>
+    <span>Ontario, Canada</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://theadjustingentries.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
